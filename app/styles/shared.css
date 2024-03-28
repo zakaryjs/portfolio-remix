@@ -1,0 +1,39 @@
+:root {
+    background-color: #00d4ff;
+}
+
+@font-face {
+    font-family: 'satoshi-black';
+    src: url('../../assets/fonts/Satoshi-Black.otf');
+}
+@font-face {
+    font-family: 'satoshi-bold';
+    src: url('../../assets/fonts/Satoshi-Bold.otf');
+}
+@font-face {
+    font-family: 'satoshi-medium';
+    src: url('../../assets/fonts/Satoshi-Medium.otf');
+}
+@font-face {
+    font-family: 'satoshi-regular';
+    src: url('../../assets/fonts/Satoshi-Regular.otf');
+}
+
+body {
+    font-family: 'satoshi-black';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+.styled {
+    text-decoration: none;
+    margin: 1rem;
+}
