@@ -44,3 +44,19 @@ li {
     background-color: white;
     color: #2c67f2;
 }
+
+li {
+    list-style-type: none;
+}
+
+.styledSelected {
+    color: #2c67f2;
+}
+
+.styled {
+    color: black;
+}
+
+a.active {
+    color: #2c67f2;
+}
