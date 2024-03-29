@@ -37,3 +37,10 @@ li {
     text-decoration: none;
     margin: 1rem;
 }
+
+.icon {
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    color: #2c67f2;
+}
