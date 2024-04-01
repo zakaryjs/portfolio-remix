@@ -14,7 +14,7 @@ export default function Skills() {
     return (
         <div>
             <Navbar />
-            <div className="h-screen flex flex-col justify-center items-center mt-[5rem]">
+            <div className="flex flex-col justify-center items-center mt-8">
                 <h1 className="text-5xl text-white">
                     Skills
                 </h1>

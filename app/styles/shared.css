@@ -24,8 +24,8 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    text-align: center;
+    align-items: center;
+    /* text-align: center; */
     min-height: 100vh;
 }
 
@@ -42,6 +42,10 @@ li {
     border-radius: 50%;
     border: 1px solid white;
     background-color: white;
+    color: #2c67f2;
+}
+
+.square-icon {
     color: #2c67f2;
 }
 
