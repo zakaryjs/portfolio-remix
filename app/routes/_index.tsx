@@ -22,7 +22,7 @@ export default function Index() {
         <h2 className="text-3xl text-white mt-4">
           Junior Web Developer
         </h2>
-        <div className="flex items-center justify-center bg-white shadow-md mt-8 rounded-lg w-[750px] mx-auto">
+        <div className="flex items-center justify-center text-center bg-white shadow-md mt-8 rounded-lg w-[750px] mx-auto">
           <p className="text-sky2 text-xl m-6">A passionate and enthusiastic developer who loves to build and design for the web. I am well versed with the MERN stack, and am currently learning Rust and Typescript.</p>
         </div>
         <div className="flex justify-center items-center">
