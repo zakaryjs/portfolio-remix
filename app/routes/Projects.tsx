@@ -1,14 +1,27 @@
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { FaGithubAlt } from "react-icons/fa";
+import { MetaFunction } from "@remix-run/react";
+import { motion } from "framer-motion"
 
+export const meta: MetaFunction = () => {
+    return [
+      { title: "Zakary Sutherland" },
+      { name: "description", content: "Zakary Sutherland Personal Portfolio" },
+    ];
+  };
 
 export default function Projects() {
 
     return (
         <div className="">
             <Navbar />
-            <div className="flex flex-col justify-center items-center mt-8">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+            >
+                <div className="flex flex-col justify-center items-center mt-8">
                 <h1 className="text-5xl text-white">
                     Projects
                 </h1>
@@ -27,8 +40,8 @@ export default function Projects() {
                     <p className="text-sky2 text-xl m-6">This project is an API built to manage stored physical media. Built with Flask, this API allows users to add their media to a database in order to keep track of what is owned.</p>
                     <FaGithubAlt onClick={() => window.open('https://github.com/zakaryjs/CA-T2A2-Webserver_API', '_blank')} className="text-5xl mt-2 mb-4 square-icon cursor-pointer"/>
                 </div>
-                
-            </div>
+                </div>
+            </motion.div>
             <Footer />
         </div>
     )

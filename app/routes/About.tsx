@@ -1,12 +1,25 @@
+import { MetaFunction } from "@remix-run/react";
 import Footer from "~/components/Footer"
 import Navbar from "~/components/Navbar"
+import { motion } from "framer-motion"
 
+export const meta: MetaFunction = () => {
+    return [
+      { title: "Zakary Sutherland" },
+      { name: "description", content: "Zakary Sutherland Personal Portfolio" },
+    ];
+  };
 
 export default function About() {
     return (
         <div className="">
             <Navbar />
-            <div className="h-screen flex flex-col justify-center items-center">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+            >
+                <div className="h-screen flex flex-col justify-center items-center">
                 <h1 className="text-5xl text-white">
                     About
                 </h1>
@@ -22,7 +35,9 @@ export default function About() {
                 <div className="flex items-center justify-center text-center bg-white shadow-md mt-8 rounded-lg w-[750px] mx-auto">
                     <p className="text-sky2 text-xl m-6">When I&apos;m not programming, I am either spending time with family and friends, enjoying video games and anime, and thinking about future project ideas.</p>
                 </div>
-            </div>
+                </div>
+            </motion.div>
+            
             <Footer />
         </div>
     )

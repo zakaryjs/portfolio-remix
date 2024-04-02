@@ -2,14 +2,27 @@ import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { IoMdMail } from "react-icons/io";
+import { MetaFunction } from "@remix-run/react";
+import { motion } from "framer-motion"
 
+export const meta: MetaFunction = () => {
+    return [
+      { title: "Zakary Sutherland" },
+      { name: "description", content: "Zakary Sutherland Personal Portfolio" },
+    ];
+  };
 
 export default function Contact() {
 
     return (
         <div className="">
             <Navbar />
-            <div className="h-screen flex flex-col justify-center items-center">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+            >
+                <div className="h-screen flex flex-col justify-center items-center">
                 <h1 className="text-5xl text-white">
                     Contact Me
                 </h1>
@@ -27,7 +40,8 @@ export default function Contact() {
                     <TiSocialLinkedin onClick={() => window.open('https://www.linkedin.com/in/zakary-sutherland/', '_blank')} className="text-5xl mt-8 ml-4 icon shadow-md cursor-pointer"/>
                     <IoMdMail onClick={() => window.open('mailto:zakarys2005@gmail.com')} className="text-5xl mt-8 ml-4 icon shadow-md cursor-pointer" />
                 </div>
-            </div>
+                </div>
+            </motion.div>
             <Footer />
         </div>
     )

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import Navbar from "~/components/Navbar";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -6,15 +7,27 @@ import { SiExpress } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { SiFlask } from "react-icons/si";
 import Footer from "~/components/Footer";
+import { MetaFunction } from "@remix-run/react";
+import { motion } from "framer-motion"
 
-
+export const meta: MetaFunction = () => {
+    return [
+      { title: "Zakary Sutherland" },
+      { name: "description", content: "Zakary Sutherland Personal Portfolio" },
+    ];
+  };
 
 export default function Skills() {
 
     return (
         <div>
             <Navbar />
-            <div className="flex flex-col justify-center items-center mt-8">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+            >
+                <div className="flex flex-col justify-center items-center mt-8">
                 <h1 className="text-5xl text-white">
                     Skills
                 </h1>
@@ -55,6 +68,7 @@ export default function Skills() {
                     </p>
                 </div>
             </div>
+            </motion.div>
             <Footer />
         </div>
     )
