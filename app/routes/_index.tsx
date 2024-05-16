@@ -29,7 +29,7 @@ export default function Index() {
                 Junior Web Developer
               </h2>
               <div className="flex items-center justify-center text-center bg-white shadow-md mt-8 rounded-lg w-[750px] mx-auto">
-                <p className="text-sky2 text-xl m-6">A passionate and enthusiastic developer who loves to build and design for the web. I am well versed with the MERN stack, and am currently learning Rust and Typescript.</p>
+                <p className="text-sky2 text-xl m-6">A passionate and enthusiastic developer who loves to build and design for the web. I am well versed with the MERN stack, and am currently learning Typescript.</p>
               </div>
               <div className="flex justify-center items-center">
                 <FaGithub onClick={() => window.open('https://github.com/zakaryjs', '_blank')} className="text-5xl mt-8 icon shadow-md cursor-pointer"/>
